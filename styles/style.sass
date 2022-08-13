@@ -19,11 +19,55 @@ header
     max-width: 1280px
     margin: 0 auto
 .wrapper_header-info
+    align-items: center
+    padding-right: 20px
+    padding-left: 20px
     display: flex
     justify-content: space-between
     font-weight: 400
     margin-top: 30px
     margin-bottom: 50px
+.wrapper_header-nav
+    position: relative
+    display: flex
+    justify-content: space-between
+    gap: 54px
+    
+.mobile
+    display: none
+.site-nav__icon
+    align-items: center
+    margin-left: 20px
+    cursor: pointer
+    display: none
+    gap: 14px
+    font-weight: 500
+    img
+        height: 25px
+.main-mobile
+    display: none
+    flex-direction: column
+    background-image: url(../pics/smile-mobile.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    height: 400px
+    color: #fff
+    justify-content: end
+    padding: 30px
+    margin-bottom: 55px
+.main-mobile__title
+    font-weight: 500
+    font-style: italic
+    font-size: 50px
+    text-transform: uppercase
+    line-height: 55px
+    margin-bottom: 10px
+.main-mobile__descr
+    font-size: 35px
+    margin-bottom: 30px
+.promocode
+    text-transform: uppercase
+    color: #00A6FF
 .header__el
     display: flex
     align-items: center
@@ -34,14 +78,14 @@ header
     display: flex
     gap: 40px
     font-size: 0.94em
-.header__tel
 .header__logo
+    align-items: center
     display: flex
     justify-content: start
     font-size: 1.25em
 .header__logo-img
     img
-        width: 134px
+        width: 124px
 .header__logo-slogan
     display: flex
     max-width: 180px
@@ -57,12 +101,19 @@ header
     display: flex
     justify-content: space-between
     align-items: center
+    flex-grow: 1
+    margin: 0 20px
+    z-index: 100
+    background-color: #fff
+    overflow: hidden
+    transition: 0.2s
 .site-nav__item
     text-decoration: none
     color: $nav-color
     font-size: 1.13em
     font-weight: 500
 .request-btn
+    margin-right: 20px
     background: transparent
     padding: 16px 37px
     color: $primary
@@ -70,6 +121,9 @@ header
     border-radius: 30px
     font-weight: 400
     font-size: 1.13em
+    z-index: 9999
+    width: max-content
+    justify-self: right
 .section-name
     color: #3A3A3A
     font-style: normal
@@ -118,7 +172,9 @@ header
 .device 
     grid-column: 3/4
     grid-row: 1/3
-
+.device__img
+    border: 1px solid transparent
+    border-radius: 50px
 // Консультатции
 
 .consultation
@@ -126,15 +182,19 @@ header
     max-width: 1920px
     margin: 0 auto
 .appointment-btn
+    display: block
+    width: max-content
     font-family: 'Roboto'
     padding: 18px 61px
     color: #fff
     background-color: $primary
     font-weight: 500
-    font-size: 1.5em
+    font-size: 25px
     border: $primary
     border-radius: 50px
     cursor: pointer
+.inner
+    margin-top: 35px
 .absolute-btn
     position: absolute
     left: 10%
@@ -144,35 +204,41 @@ header
     gap: 80px
     max-width: 1650px
     margin-right: auto
+.consultation__banner
+    img
+        max-width: 948px
 .consultation__text
     font-weight: 400
-    font-size: 30px
+    font-size: 2.18em
     line-height: 35px
     margin-bottom: 35px
 .tooth-img
     position: absolute
     bottom: -70%
     right: -40%
+.small-tooth-img
+    display: none
 .consultation__info
     position: relative
     height: max-content
-    max-width: 506px
     margin: auto 0
 .numbers
-    padding: 180px 113px
+    padding: 180px 0 113px
+.numbers-swiper
+    grid-column: 1/4
+
 .numbers__wrapper
     max-width: 1280px
     margin: 0 auto
     display: grid
     grid-template-columns: repeat(3, 1fr)
-    grid-template-rows: 120px 1fr
+    gap: 15px
 .numbers__section-name
-    grid-row: 1/2
-    grid-column: 1/4
+    display: block
+    max-width: 1280px
+    margin: 0 auto
+    margin-bottom: 59px
 .numbers__item
-    padding: 43px 43px 73px
-    width: 413px
-    height: 520px
     background: #9BDAFC
     font-family: 'Roboto'
     margin-bottom: 25px
@@ -183,7 +249,7 @@ header
     color: #3A3A3A
     display: flex
     flex-direction: column
-    justify-content: space-between
+    justify-content: start
 .numbers__number
     font-family: 'Bungee'
     font-style: normal
@@ -193,6 +259,7 @@ header
     line-height: 107px
 .upper-case
     text-transform: uppercase
+    margin-bottom: auto
 .numbers__desc
     align-self: flex-end
 .video-gallery
@@ -216,6 +283,27 @@ header
     padding: 73px 0 70px
 .doctors__section-name
     margin-bottom: 30px
+.doctors__slider-wrap
+    display: flex
+    max-width: 1450px
+    min-width: 820px
+    margin: 0 auto
+    justify-content: space-between
+    align-items: center
+.doctors__name
+    width: 183px
+    font-weight: 500
+    font-size: 14.8px
+    line-height: 18px
+    padding: 16px 5px
+    background-color: #00A6FF
+    color: #fff
+    border-radius: 23.5695px
+    text-align: center
+    position: absolute
+    bottom: 0
+    left: 0%
+    z-index: 100
 .put-request
     background-color: $b-color
     padding: 85px 0
@@ -227,53 +315,67 @@ header
     padding: 61px 130px
     color: #fff
     font-family: 'Roboto'
-    background-image: url(../pics/square.svg)
-    background-repeat: no-repeat
-    background-position: 10% 79%
     border-radius: 50px
     position: relative
 .request__title
+    position: relative
     text-transform: uppercase
     font-weight: 500
     font-size: 48px
+    z-index: 9999
 .request__descr
+    position: relative
     font-weight: 400
     font-size: 35px
     margin: 19px 0 76px
     max-width: 485px
+    z-index: 9999
 .request-form
+    width: 100%
     display: flex
     flex-direction: column
     gap: 15px
     margin-bottom: 45px
-    input
+    z-index: 9999
+    input, select
         max-width: 407px
         padding: 21px 41px
         border-radius: 20px
         border: 1px #fff
         outline: none
-        &[placeholder]
-            font-family: 'Roboto'
-            font-weight: 300
-            font-size: 18px
-            color: #AAAAAA
-            
+        font-weight: 300
+        font-size: 18px
+        // color: #000000
+.select-service
+    cursor: pointer
+    appearance: none
+    background-image: url(pics/select-arrow.svg)
+    display: none
+    option
+        color: #000
+.select-preview
+    color: #AAAAAA(!important)
 .request__img
     position: absolute
     bottom: 0
     right: -105px
     max-height: 810px
 .request__form-wrapper
+    padding: 0 29px
     display: flex
     flex-direction: column
-    max-width: 400px
+    max-width: 437px
+    background-image: url(../pics/square.svg)
+    background-repeat: no-repeat
+    background-position: 0 50%
+    background-size: 100%
 .btn-center
     align-self: center
+    z-index: 9999
 .feedback
     padding: 70px 0
 .feedback__wrapper
     max-width: 1280px
-
 .feedback__section-name
     margin-bottom: 30px
 .feedback__section-description
@@ -310,6 +412,7 @@ header
     text-align: center
     text-transform: uppercase
     margin-bottom: 50px
+
 .mailing-form
     display: flex
     gap: 31px
@@ -336,5 +439,38 @@ header
     border: 2px solid $primary
     background: transparent
     border-radius: 35px
+.news-btn-mobile
+    font-weight: 700
+    font-size: 18px
+    color: #fff
+    border: #fff
+    width: 146px
+    height: 40px
+    background: #EE401D
+    box-shadow: inset 2.20717px -1.10359px 4.96614px #CC2200
+    border-radius: 20px
 footer
+    justify-content: center
+    text-transform: uppercase
     display: flex
+    font-family: 'Roboto'
+    color: #495059
+.footer__contact
+    padding: 80px 0 0 80px
+.social-text
+    font-weight: 400
+    font-size: 1.5em
+    color: #3A3A3A
+.footer__el
+    display: flex
+    max-width: 306px
+    font-weight: 400
+    font-size: 1.5em
+    margin-bottom: 30px
+.social-text
+    margin: 67px 0 40px
+.social-icons
+    display: flex
+    gap: 23px
+    align-items: center
+

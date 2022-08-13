@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="js/node_modules/swiper/swiper-bundle.css"/>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/burger-menu.css">
     <title>Document</title>
 </head>
 <body>
@@ -39,7 +41,10 @@
                 </div>
                 <div class="header__tel header__el">
                     <div class="header__tel-img header__el_img">
-                        <img src="pics/carbon_phone-filled.svg" alt="">
+                        <svg class="tel-img" width="35" height="35" fill="#007aff" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.2359 23.4938L24.6859 21.0438C25.0158 20.7179 25.4333 20.4948 25.8877 20.4016C26.342 20.3084 26.8136 20.3491 27.2452 20.5188L30.2312 21.7109C30.6674 21.888 31.0414 22.1902 31.3061 22.5795C31.5708 22.9688 31.7144 23.4277 31.7187 23.8984V29.3672C31.7161 29.6874 31.6488 30.0038 31.5208 30.2973C31.3927 30.5909 31.2066 30.8554 30.9736 31.0752C30.7406 31.2949 30.4656 31.4651 30.1651 31.5757C29.8645 31.6864 29.5447 31.735 29.2249 31.7188C8.30148 30.4172 4.07961 12.6984 3.28117 5.9172C3.2441 5.58419 3.27797 5.24711 3.38053 4.92813C3.4831 4.60915 3.65204 4.31551 3.87624 4.06651C4.10044 3.81751 4.37483 3.6188 4.68134 3.48346C4.98785 3.34812 5.31955 3.27921 5.65461 3.28126H10.9374C11.4088 3.28266 11.8691 3.42506 12.2589 3.69014C12.6487 3.95522 12.9503 4.33087 13.1249 4.76876L14.3171 7.7547C14.4924 8.18462 14.5371 8.65665 14.4457 9.11184C14.3542 9.56702 14.1307 9.98518 13.803 10.3141L11.353 12.7641C11.353 12.7641 12.764 22.3125 22.2359 23.4938Z" fill="#9BDAFC"/>
+                            </svg>
+                            
                     </div>
                     <p>+7 (775) 234 56 78 <br>
                         +7 (705) 234 56 78</p>
@@ -47,41 +52,57 @@
             </div>
         </div>
         <div class="wrapper_header-nav wrapper">
-            <nav class="site-nav">
-                <a href="#" class="site-nav__item">о нас</a>
-                <a href="#" class="site-nav__item">наши услуги</a>
-                <a href="#" class="site-nav__item">видеогалерея</a>
-                <a href="#" class="site-nav__item">наша команда</a>
-                <a href="#" class="site-nav__item">отзывы</a>
-                <a href="#" class="site-nav__item">наши достижения</a>
-                <a href="#" class="site-nav__item">контакты</a>
-                <button class="request-btn">Оставить заявку</button>
+            <div class="site-nav__icon">
+                <img src="pics/burger.svg" alt="">
+                <p>Наши услуги</p>
+            </div>
+            <button class="request-btn mobile">Оставить заявку</button>
+            <nav class="site-nav disabled">
+                <a href="#services-anch" class="site-nav__item">о нас</a>
+                <a href="#services-anch" class="site-nav__item">наши услуги</a>
+                <a href="#gallery-anch" class="site-nav__item">видеогалерея</a>
+                <a href="#team-anch" class="site-nav__item">наша команда</a>
+                <a href="#feedback-anch" class="site-nav__item">отзывы</a>
+                <a href="#achievements-anch" class="site-nav__item">наши достижения</a>
+                <a href="#contacts-anch" class="site-nav__item">контакты</a>
             </nav>
+            <button class="request-btn desktop">Оставить заявку</button>
         </div>
     </header>
-            <div class="main-slider swiper-container">
-                <div class="control-wrapper">
-                    <div class="control">
-                        <div class="main-slider__prev swiper-button-prev">
-                            <img src="pics/arrow-up.svg" alt="">
-                        </div>
-                        <div class="main-slider__pag swiper-pagination"></div>
-                        <div class="main-slider__next swiper-button-next">
-                            <img src="pics/arrow-down.svg" alt="">
-                        </div>
+        <div class="slider-wrapper">
+            <div class="control-wrapper">
+                <div class="control">
+                    <div class="main-slider__prev">
+                        <img src="pics/arrow-up.svg" alt="">
                     </div>
-                </div>
-                <div class="main-slider__wrapper swiper-wrapper">
-                    <div class="main-slider__slide swiper-slide"><img src="pics/slider-smile.png" alt="">
-                        <button class="appointment-btn absolute-btn">Записаться</button>
+
+                    <div class="main-slider__pag swiper-pagination"></div>
+
+                    <div class="main-slider__next">
+                        <img src="pics/arrow-down.svg" alt="">
                     </div>
-                    <div class="main-slider__slide swiper-slide"><img src="pics/slider-smile.png" alt=""><button class="appointment-btn absolute-btn">Записаться</button></div>
-                    <div class="main-slider__slide swiper-slide"><img src="pics/slider-smile.png" alt=""><button class="appointment-btn absolute-btn">Записаться</button></div>
-                    <div class="main-slider__slide swiper-slide"><img src="pics/slider-smile.png" alt=""><button class="appointment-btn absolute-btn">Записаться</button></div>
-                    <div class="main-slider__slide swiper-slide"><img src="pics/slider-smile.png" alt=""><button class="appointment-btn absolute-btn">Записаться</button></div>
                 </div>
             </div>
-            <section class="services">
+            <div class="main-slider swiper-container">
+                <div class="main-slider__wrapper swiper-wrapper">
+                    <div class="main-slider__slide swiper-slide"><img class="main__img" src="pics/slider-smile.png" alt=""><button class="appointment-btn absolute-btn">Записаться</button></div>
+                    <div class="main-slider__slide swiper-slide"><img class="main__img" src="pics/slider-smile.png" alt=""><button class="appointment-btn absolute-btn">Записаться</button></div>
+                    <div class="main-slider__slide swiper-slide"><img class="main__img" src="pics/slider-smile.png" alt=""><button class="appointment-btn absolute-btn">Записаться</button></div>
+                    <div class="main-slider__slide swiper-slide"><img class="main__img" src="pics/slider-smile.png" alt=""><button class="appointment-btn absolute-btn">Записаться</button></div>
+                    <div class="main-slider__slide swiper-slide"><img class="main__img" src="pics/slider-smile.png" alt=""><button class="appointment-btn absolute-btn">Записаться</button></div>
+                </div>
+            </div>
+            <div class="main-mobile">
+                <p class="main-mobile__title">Улыбайся <br>
+                    <span class="primary-word">уверенно</span>
+                </p>
+                <p class="main-mobile__descr">Используй промокод    <span class="promocode">hollywood</span>
+                    и получай скидку 10% на все услуги </p>
+
+                <button class="appointment-btn">Записаться</button>
+            </div>
+        </div>
+        <section class="services" id="services-anch">
                 <div class="services__wrapper">
                     <h1 class="section-name">Наши <span class="primary-word">услуги</span></h1>
                     <div class="articles-wrapper">
@@ -110,88 +131,101 @@
             <section class="consultation">
                 <h1 class="section-name">Первичная консультация врача <span class="primary-word">бесплатно!</span></h1>
                 <div class="consultation__wrapper">
-                    <div class="consultation__banner">
+                    <div class="consultation__banner">doctor
                         <img src="pics/exam.jpg" alt="">
                     </div>
                     <div class="consultation__info">
-                        <p class="consultation__text">Запишитесь на прием и получите бесплатную консультацию, а также пошаговый план своего лечения после осмотра доктора.
-                            Многолетний опыт врача помогает проводить осмотр безболезненно и легко.</p>
-                        <button class="appointment-btn">Записаться</button>
+                        <div class="consultation__text">Запишитесь на прием и получите бесплатную консультацию, а также пошаговый план своего лечения после осмотра доктора.
+                            Многолетний опыт врача помогает проводить осмотр безболезненно и легко.
+                            <button class="appointment-btn inner">Записаться</button>
+                        </div>
+                        
                         <img class="tooth-img" src="pics/tooth.png" alt="">
+                        <img class="small-tooth-img" src="pics/small-tooth.png" alt="">
                     </div>
                 </div>
             </section>
-            <section class="numbers">
-                <div class="numbers__wrapper">
-                    <h1 class="section-name numbers__section-name"> <span class="primary-word">Наша работа</span> в числах</h1>
-                    <article class="numbers__item">
-                        <p class="numbers__number">
-                            11
-                        </p>
-                        <p class="upper-case">Лет работы  </p>
-                        <p class="numbers__desc">За это время наша
-                            команда выросла 
-                            до 35 высококлассных
-                            специалистов
-                            
+            <section class="numbers" id="about-us-anch">
+                    <h1 class="section-name numbers__section-name"> 
+                    <span class="primary-word">Наша работа</span> в числах</h1>
+                    <div class="numbers__wrapper">
+                        <article class="numbers__item">
+                            <p class="numbers__number">
+                                11
                             </p>
-                    </article>
-                    <article class="numbers__item">
-                        <p class="numbers__number">
-                            3
-                        </p>
-                        <p class="upper-case">Филиала</p>
-                        <p class="numbers__desc">Мы уверенно растем
-                            и развиваемся,
-                            не забывая о качестве
-                            наших услуг
+                            <p class="upper-case">Лет работы  </p>
+                            <p class="numbers__desc">За это время наша
+                                команда выросла 
+                                до 35 высококлассных
+                                специалистов
+                                
+                                </p>
+                        </article>
+                        <article class="numbers__item">
+                            <p class="numbers__number">
+                                3
                             </p>
-                    </article>
-                    <article class="numbers__item">
-                        <p class="numbers__number">
-                            1562
-                        </p>
-                        <p class="upper-case">Счастливых улыбок</p>
-                        <p class="numbers__desc">В наших стомотологиях будет комфортно как взрослым, так и детям</p>
-                    </article>
-                </div>
+                            <p class="upper-case">Филиала</p>
+                            <p class="numbers__desc">Мы уверенно растем
+                                и развиваемся,
+                                не забывая о качестве
+                                наших услуг
+                                </p>
+                        </article>
+                        <article class="numbers__item">
+                            <p class="numbers__number">
+                                1562
+                            </p>
+                            <p class="upper-case">Счастливых улыбок</p>
+                            <p class="numbers__desc">В наших стомотологиях будет комфортно как взрослым, так и детям</p>
+                        </article>
+                    </div>
             </section>
-            <section class="video-gallery">
+            <section class="video-gallery" id="gallery-anch">
                 <div class="video-gallery__wrapper">
                     <h1 class="section-name">Узнайте о нас больше в <span class="primary-word">видеогалерее</span></h1>
                     <p class="section-description">Познакомимся с врачами, осмотрим клинику, узнаем ответы на часто задаваемые вопросы</p>
-                    <!-- SLIDER -->
-                    <div class="video-swiper swiper">
-                        <div class="video-swiper__wrapper swiper-wrapper">
-                            <div class="video-swiper__slide swiper-slide"><img src="pics/preview.jpg" alt=""></div>
-                            <div class="video-swiper__slide swiper-slide"><img src="pics/preview.jpg" alt=""></div>
-                            <div class="video-swiper__slide swiper-slide"><img src="pics/preview.jpg" alt=""></div>
-                            <div class="video-swiper__slide swiper-slide"><img src="pics/preview.jpg" alt=""></div>
-                        </div>
-                        <div class="video-swiper__prev swiper-button-prev"><img src="pics/arrow-left.svg" alt=""></div>
-                        <div class="video-swiper__next swiper-button-next"><img src="pics/arrow-right.svg" alt=""></div>
-                      </div>
+                </div>
+                <div class="video-swiper swiper">
+                    <div class="video-swiper__wrapper swiper-wrapper">
+                        <div class="video-swiper__slide swiper-slide"><img src="pics/preview.jpg" class="preview-desktop" alt="">
+                        <img src="pics/preview-mobile.png" class="preview-mobile" alt="">
+                    </div>
+                        <div class="video-swiper__slide swiper-slide"><img src="pics/preview.jpg" class="preview-desktop" alt="">
+                        <img src="pics/preview-mobile.png" class="preview-mobile" alt="">
+                    </div>
+                        <div class="video-swiper__slide swiper-slide"><img src="pics/preview.jpg" class="preview-desktop" alt="">
+                        <img src="pics/preview-mobile.png" class="preview-mobile" alt="">
+                    </div>
+                    </div>
+
+                    <div class="video-swiper__prev swiper-button-prev"><img src="pics/arrow-left.svg" alt=""></div>
+                    <div class="video-swiper__next swiper-button-next"><img src="pics/arrow-right.svg" alt=""></div>
+
                 </div>
             </section>
-            <section class="doctors">
+            <section class="doctors" id="team-anch">
                 <div class="doctors__wrapper">
                     <h1 class="section-name doctors__section-name"><span class="primary-word"> Наши врачи</span></h1>
                     <p class="section-description">Профессиональные специалисты, влюбленные в свое дело</p>
-                    <div class="doctors-swiper__prev swiperPrev"><img src="pics/arrow-left.svg" alt=""></div>
-                    <div class="doctors-swiper swiper">
-                        <div class="doctors-swiper__wrapper swiper-wrapper">
-                          <div class="doctors-swiper__slide swiper-slide"><img src="pics/doctor1.jpg" alt=""></div>
-                          <div class="doctors-swiper__slide swiper-slide"><img src="pics/doctor2.jpg" alt=""></div>
-                          <div class="doctors-swiper__slide swiper-slide"><img src="pics/doctor3.jpg" alt=""></div>
-                          <div class="doctors-swiper__slide swiper-slide"><img src="pics/doctor1.jpg" alt=""></div>
-                          <div class="doctors-swiper__slide swiper-slide"><img src="pics/doctor2.jpg" alt=""></div>
-                          <div class="doctors-swiper__slide swiper-slide"><img src="pics/doctor3.jpg" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="doctors-swiper__next swiperNext"><img src="pics/arrow-right.svg" alt=""></div>
                 </div>
+                    <div class="doctors__slider-wrap">
+                        <div class="doctors-swiper__prev swiperPrev"><img src="pics/arrow-left.svg" alt=""></div>
+                        <div class="doctors-swiper swiper">
+                            <div class="doctors-swiper__wrapper swiper-wrapper">
+                                <div class="doctors-swiper__slide swiper-slide" data-surname="Александр Абрамов"><img src="pics/doctor1.jpg" alt=""></div>
+                                <div class="doctors-swiper__slide swiper-slide" data-surname="Ева Барашкина"><img src="pics/doctor2.jpg" alt=""></div>
+                                <div class="doctors-swiper__slide swiper-slide" data-surname="Кристина Иванова"><img src="pics/doctor3.jpg" alt=""></div>
+                                <div class="doctors-swiper__slide swiper-slide" data-surname="Александр Абрамов"><img src="pics/doctor1.jpg" alt=""></div>
+                                <div class="doctors-swiper__slide swiper-slide" data-surname="Ева Барашкина"><img src="pics/doctor2.jpg" alt=""></div>
+                                <div class="doctors-swiper__slide swiper-slide" data-surname="Кристина Иванова"><img src="pics/doctor3.jpg" alt=""></div>
+                            </div>
+                            <div class="doctors__name">Александр Абрамов</div>
+                        </div>
+                        <div class="doctors-swiper__next swiperNext"><img src="pics/arrow-right.svg" alt=""></div>
+                    </div>
             </section>
-            <section class="put-request">
+            <section class="put-request" >
                 <div class="request">
                         <h1 class="request__title">
                             оставьте заявку
@@ -201,16 +235,23 @@
                         </p>
                         <div class="request__form-wrapper">
                             <form action="" name="request-form" class="request-form">
-                                <input type="text" name="person" id="" placeholder="Имя, фамилия">
-                                <input type="text" name="tel" id="" placeholder="Номер телефона">
-                                <input type="text" name="email" id="" placeholder="Ваш e-mail">
+                                <input type="text" name="person"placeholder="Имя, фамилия">
+                                <input type="tel" name="tel" id="" placeholder="Номер телефона" pattern="[0-9]{3} [0-9]{3} [0-9]{4}">
+                                <input type="email" name="email" placeholder="Ваш e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                <select required name="select-service" class="select-service" >
+                                    <option disabled selected hidden class="select-preview">Выберите услугу из списка</option>
+                                    <option>Отбелевание</option>
+                                    <option>Брекеты</option>
+                                    <option>Пломбирование</option>
+                                    <option>Услуга</option>
+                                </select>
                             </form>
                             <button class="appointment-btn btn-center">Записаться</button>
                         </div>
                     <img src="pics/medical-workers.png" class="request__img" alt="">
                 </div>
             </section>
-            <section class="feedback">
+            <section class="feedback" id="feedback-anch">
                 <div class="feedback__wrapper">
                     <h1 class="section-name feedback__section-name">
                         <span class="primary-word">Отзывы</span> о нас
@@ -221,9 +262,21 @@
                     <div class="feedback-swiper swiper">
                         <!-- Additional required wrapper -->
                         <div class="feedback-swiper__wrapper swiper-wrapper">
-                            <div class="feedback-swiper__slide swiper-slide"><img src="pics/comment.png" alt=""></div>
-                            <div class="feedback-swiper__slide swiper-slide"><img src="pics/comment.png" alt=""></div>
-                            <div class="feedback-swiper__slide swiper-slide"><img src="pics/comment.png" alt=""></div>
+                            <div class="feedback-swiper__slide swiper-slide">
+                                <img src="pics/comment.png" alt=""
+                                class="comment-desktop">
+                                <img src="pics/comment-mobile.png" alt="" class="comment-mobile">
+                            </div>
+                            <div class="feedback-swiper__slide swiper-slide">
+                                <img src="pics/comment.png" alt=""
+                                class="comment-desktop">
+                                <img src="pics/comment-mobile.png" alt="" class="comment-mobile">
+                            </div>
+                            <div class="feedback-swiper__slide swiper-slide">
+                                <img src="pics/comment.png" alt=""
+                                class="comment-desktop">
+                                <img src="pics/comment-mobile.png" alt="" class="comment-mobile">
+                            </div>
                         </div>
 
                         <div class="feedback-swiper-prev swiper-button-prev"><img src="pics/arrow-left.svg" alt=""></div>
@@ -232,7 +285,7 @@
                     </div>
                 </div>
             </section>
-            <section class="achievements">
+            <section class="achievements" id="achievements-anch">
                 <div class="achievements__wrapper">
                     <h1 class="section-name achievements__sectiion-name">
                         <span class="primary-word"> Наши достижения </span>
@@ -266,36 +319,56 @@
                     <form action="" method="post" class="mailing-form">
                         <input type="text" name="email" placeholder="E-mail">
                         <button class="news-btn">Получать новости</button>
+                        <button class="news-btn-mobile">Подписаться</button>
                     </form>
                 </div>
             </section>
             <footer>
                 <div class="footer__map">
-                    <img src="pics/map.jpg" alt="">
+                    <img src="pics/map.jpg" class="footer__map-img" alt="">
+                    <img src="pics/map-mobile.png" class="footer__map-img-mobile" alt="">
                 </div>
-                <div class="footer__contact">
+                <div class="footer__contact" id="contacts-anch">
                     <div class="footer__address footer__el">
                         <div class="footer__address-img footer__el_img">
-                            <img src="pics/ic_baseline-place.svg" alt="">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.15 3C11.5385 3 7 7.5385 7 13.15C7 20.7625 17.15 32 17.15 32C17.15 32 27.3 20.7625 27.3 13.15C27.3 7.5385 22.7615 3 17.15 3ZM17.15 16.775C16.1886 16.775 15.2666 16.3931 14.5867 15.7133C13.9069 15.0334 13.525 14.1114 13.525 13.15C13.525 12.1886 13.9069 11.2666 14.5867 10.5867C15.2666 9.90692 16.1886 9.525 17.15 9.525C18.1114 9.525 19.0334 9.90692 19.7133 10.5867C20.3931 11.2666 20.775 12.1886 20.775 13.15C20.775 14.1114 20.3931 15.0334 19.7133 15.7133C19.0334 16.3931 18.1114 16.775 17.15 16.775Z" fill="#9BDAFC"/>
+                                </svg>
+                                
                         </div>
-                        <p>г. Нур-Султан, ул. Сыганак, д.18/3</p>
+                        <p>г. Нур-Султан, <br>
+                             ул. Сыганак, д.18/3</p>
                     </div>
                     <div class="footer__time footer__el">
                         <div class="footer__time-img footer__el_img">
-                            <img src="pics/mdi_clock-time-four.svg" alt="">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5003 2.91666C9.47949 2.91666 2.91699 9.47916 2.91699 17.5C2.91699 25.5208 9.47949 32.0833 17.5003 32.0833C25.5212 32.0833 32.0837 25.5208 32.0837 17.5C32.0837 9.47916 25.5212 2.91666 17.5003 2.91666ZM23.7712 22.1667L16.042 17.9375V10.2083H18.2295V16.625L24.792 20.2708L23.7712 22.1667Z" fill="#9BDAFC"/>
+                                </svg>
+                                
                         </div>
                         <p>пн-ср 9:00-20:00 <br>
                             чт-вс 9:00-19:00</p>
                     </div>
                     <div class="footer__tel footer__el">
                         <div class="footer__tel-img footer__el_img">
-                            <img src="pics/carbon_phone-filled.svg" alt="">
+                            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.2359 23.4938L24.6859 21.0438C25.0158 20.7179 25.4333 20.4948 25.8877 20.4016C26.342 20.3084 26.8136 20.3491 27.2452 20.5188L30.2312 21.7109C30.6674 21.888 31.0414 22.1902 31.3061 22.5795C31.5708 22.9688 31.7144 23.4277 31.7187 23.8984V29.3672C31.7161 29.6874 31.6488 30.0038 31.5208 30.2973C31.3927 30.5909 31.2066 30.8554 30.9736 31.0752C30.7406 31.2949 30.4656 31.4651 30.1651 31.5757C29.8645 31.6864 29.5447 31.735 29.2249 31.7188C8.30148 30.4172 4.07961 12.6984 3.28117 5.9172C3.2441 5.58419 3.27797 5.24711 3.38053 4.92813C3.4831 4.60915 3.65204 4.31551 3.87624 4.06651C4.10044 3.81751 4.37483 3.6188 4.68134 3.48346C4.98785 3.34812 5.31955 3.27921 5.65461 3.28126H10.9374C11.4088 3.28266 11.8691 3.42506 12.2589 3.69014C12.6487 3.95522 12.9503 4.33087 13.1249 4.76876L14.3171 7.7547C14.4924 8.18462 14.5371 8.65665 14.4457 9.11184C14.3542 9.56702 14.1307 9.98518 13.803 10.3141L11.353 12.7641C11.353 12.7641 12.764 22.3125 22.2359 23.4938Z" fill="#9BDAFC"/>
+                                </svg>
+                                
                         </div>
                         <p>+7 (775) 234 56 78 <br>
                             +7 (705) 234 56 78</p>
                     </div>
+                    <p class="social-text">
+                        Мы в соцсетях
+                    </p>
+                    <div class="social-icons">
+                        <a href="#"><img src="pics/inst-icon.svg" alt=""></a>
+                        <a href="#"><img src="pics/vk-icon.svg" alt=""></a>
+                    </div>
                 </div>
             </footer>
+        <script src="js/burger-menu.js"></script>
         <script src="js/slider.js"></script>
 </body>
 </html>

@@ -1,0 +1,663 @@
+@media (min-width: 1600px) {
+  .consultation__info {
+    max-width: 506px;
+  }
+  .numbers__item {
+    padding: 43px 43px 73px;
+    width: 413px;
+    min-height: 520px;
+  }
+}
+@media (max-width: 1600px) {
+  .numbers__item {
+    padding: 43px 33px 73px;
+    font-size: 30px;
+    height: 500px;
+  }
+  .device__img {
+    max-width: 750px;
+  }
+  .consultation__text {
+    font-size: 1.7em;
+  }
+  .tooth-img {
+    display: none;
+  }
+  .control-wrapper {
+    top: 15%;
+    right: 8%;
+  }
+  .achievements-swiper {
+    max-width: 1100px;
+  }
+  .achievements-swiper__slide img {
+    height: 500px;
+  }
+  .doctors-swiper__slide img {
+    max-width: 350px;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1600px) {
+  .upper-case {
+    margin-bottom: 50px;
+  }
+  .numbers__number {
+    margin-bottom: 30px;
+  }
+  .footer__map-img {
+    max-width: 900px;
+  }
+  .service {
+    padding: 44px 15px 39px;
+    height: 350px;
+    max-width: 380px;
+  }
+  .service__title {
+    margin-bottom: 10px;
+  }
+  .service__title img {
+    height: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1600px) {
+  section {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+}
+@media (max-width: 1300px) {
+  .numbers__number {
+    font-size: 65px;
+  }
+  .wrapper_header-nav {
+    gap: 30px;
+  }
+  .site-nav__item {
+    font-size: 0.95em;
+  }
+  .request-btn {
+    padding: 14px 20px;
+  }
+  .header__info {
+    font-size: 0.85em;
+    gap: 25px;
+  }
+  .control-wrapper {
+    top: 6%;
+    right: 8%;
+  }
+  .control {
+    height: 390px;
+  }
+  .video-swiper__slide img {
+    max-width: 850px;
+  }
+  .articles-wrapper {
+    grid-template-columns: repeat(2, 49%);
+    margin: 0 auto;
+  }
+  .service {
+    width: 100%;
+  }
+  .device {
+    display: none;
+  }
+  .consultation__wrapper {
+    gap: 25px;
+  }
+  .consultation__banner img {
+    max-width: 648px;
+  }
+  .request__img {
+    display: none;
+  }
+  .request {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .request__descr {
+    margin-bottom: 20px;
+  }
+  .request__form-wrapper {
+    width: 80%;
+    background-size: 100% 100%;
+  }
+  .doctors-swiper__slide img {
+    max-width: 270px;
+  }
+  .feedback-swiper__slide img {
+    max-width: 600px;
+  }
+  .feedback-swiper {
+    max-width: 900px;
+  }
+  footer {
+    flex-direction: column-reverse;
+    align-items: left;
+  }
+  .footer__map-img {
+    width: 100%;
+  }
+  .numbers__item {
+    padding: 43px 33px 73px;
+    width: 305px;
+    height: 400px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .achievements-swiper {
+    max-width: 850px;
+  }
+  .achievements-swiper__slide img {
+    height: 400px;
+  }
+  .numbers__number {
+    font-size: 65px;
+  }
+}
+@media (max-width: 1024px) {
+  .put-request {
+    padding: 0 !important;
+  }
+  .request {
+    border-radius: 30px;
+  }
+  .wrapper_header-nav {
+    gap: 20px;
+  }
+  .appointment-btn {
+    padding: 15px 41px;
+    font-size: 1.2em;
+  }
+  .wrapper_header-info, header {
+    margin-bottom: 20px;
+  }
+  .numbers__wrapper {
+    overflow-x: scroll;
+  }
+  .swiperNext, .swiperPrev, .swiper-button-next, .swiper-button-prev {
+    display: none;
+  }
+  .control-wrapper {
+    display: none;
+  }
+  .header__address, .header__time {
+    display: none;
+  }
+  .site-nav__item {
+    font-size: 0.8em;
+  }
+  .request-btn {
+    font-size: 0.9em;
+  }
+  .consultation__banner {
+    display: none;
+  }
+  .small-tooth-img {
+    position: absolute;
+    display: inline-block;
+    bottom: 10px;
+    right: -20px;
+  }
+  .consultation__info {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+  }
+  .doctors-swiper, .achievements-swiper {
+    overflow: hidden;
+  }
+  .feedback-swiper {
+    width: 100%;
+  }
+  .video-swiper {
+    width: 100%;
+  }
+  .section-description {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 885px) {
+  .wrapper_header-nav {
+    gap: 13px;
+  }
+  .site-nav__item {
+    font-size: 0.7em;
+  }
+  .request-btn {
+    font-size: 0.8em;
+  }
+  .service__title {
+    margin-bottom: 10px;
+  }
+  .service__title img {
+    height: 40px;
+  }
+  .news-btn {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 767px) {
+  .preview-mobile {
+    display: none;
+  }
+  .comment-mobile {
+    display: none;
+  }
+  .doctors__name {
+    display: none;
+  }
+  .news-btn-mobile {
+    display: none;
+  }
+  .footer__map-img-mobile {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .numbers__item {
+    padding: 20px 20px 40px;
+    height: 380px;
+    width: 300px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .site-nav {
+    height: 365px;
+  }
+  header {
+    margin: 0;
+  }
+  .wrapper_header-nav {
+    background-color: #F9F8F8;
+    padding: 22px 0;
+    gap: 0;
+  }
+  .site-nav__icon {
+    text-transform: uppercase;
+  }
+  .wrapper_header-info {
+    margin: 0;
+  }
+  .footer__map-img-mobile {
+    display: inline-block;
+    width: 100%;
+  }
+  .footer__map-img {
+    display: none;
+  }
+  .mailing {
+    padding: 30px 20px;
+  }
+  .mailing__text {
+    margin-bottom: 20px;
+  }
+  .mailing-form {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .mailing-form input {
+    padding: 11px 14px;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 16px;
+    height: 40px;
+  }
+  .news-btn-mobile {
+    display: block;
+  }
+  .news-btn {
+    display: none;
+  }
+  .feedback {
+    padding: 30px 0;
+  }
+  .achievements {
+    padding: 20px 0;
+  }
+  .numbers__item {
+    padding: 20px 30px;
+    height: 400px;
+  }
+  .numbers__number {
+    font-size: 65px;
+  }
+  .upper-case, .numbers__desc {
+    font-size: 19px;
+    line-height: 22px;
+  }
+  .upper-case {
+    margin-bottom: 45px;
+  }
+  .header__tel-img {
+    margin-right: 5px;
+  }
+  .tel-img {
+    width: 12px;
+  }
+  .tel-img path {
+    fill: #00A6FF;
+  }
+  .header__logo-img img {
+    width: 87px;
+  }
+  .header__logo {
+    font-size: 1em;
+  }
+  .header__logo-slogan::before {
+    height: 32px;
+    margin: 0 5px;
+  }
+  .main-mobile {
+    display: flex;
+  }
+  .main-slider {
+    display: none;
+  }
+  .site-nav__icon {
+    display: flex;
+  }
+  .site-nav {
+    position: absolute;
+    border: 1px solid #FF9900;
+    margin: 0;
+    flex-direction: column;
+    align-items: start;
+    grid-column: 1/3;
+    gap: 10px;
+    font-size: 1.6em;
+    gap: 0;
+    top: 55px;
+    width: 100%;
+  }
+  .site-nav__item {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #FF9900;
+    padding: 15px 10px;
+  }
+  .site-nav__item:last-child {
+    border-bottom: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    padding: 8px 14px;
+  }
+  .wrapper_header-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .appointment-btn {
+    padding: 15px 30px;
+    font-size: 22px;
+    background-color: #EE401D;
+  }
+  .articles-wrapper {
+    overflow-x: scroll;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .articles-wrapper img {
+    height: 36px;
+  }
+  .service__title {
+    font-size: 25px;
+  }
+  .service__descr {
+    font-size: 15px;
+  }
+  .service {
+    width: 323px;
+    height: 323px;
+  }
+  .section-name {
+    font-size: 38px;
+    margin: 0 20px 35px;
+    line-height: 40px;
+  }
+  .section-description {
+    margin: 0 20px 40px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .consultation__info {
+    font-size: 15px;
+    width: 100%;
+    padding: 0 10px;
+    text-align: left;
+  }
+  .numbers__number {
+    margin-bottom: 15px;
+  }
+  .video-gallery {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .preview-desktop {
+    display: none;
+  }
+  .consultation__text {
+    padding: 0 20px;
+    margin: 0 auto 35px;
+  }
+  .comment-desktop {
+    display: none;
+  }
+  .select-service {
+    display: block;
+  }
+  .request__form-wrapper {
+    background-image: url(../pics/mobile-square.png);
+    background-size: 100% 87%;
+    background-position-y: 45%;
+  }
+  .request-form {
+    margin-bottom: 26px;
+    gap: 10px;
+  }
+  .request-form input, .request-form select {
+    border-radius: 30px;
+    padding: 14px 22px;
+    font-size: 13px;
+  }
+  .request__descr {
+    font-size: 21px;
+    text-align: center;
+  }
+  .request__title {
+    max-width: none;
+    font-size: 29px;
+  }
+  .request {
+    padding: 41px 20px;
+    border-radius: 0px;
+  }
+  .disabled {
+    height: 0%;
+    border: none;
+  }
+}
+@media (max-width: 480px) {
+  .header__logo-slogan {
+    font-size: 12px;
+    max-width: 102px;
+    align-items: center;
+  }
+  .header__logo-slogan::before {
+    height: 16px;
+    margin: 0 5px;
+  }
+  .header__tel {
+    font-size: 12px;
+  }
+  .header__tel p {
+    min-width: 102px;
+  }
+  .header__logo-img img {
+    width: 50px;
+  }
+  .site-nav__icon img {
+    width: 21px;
+  }
+  .site-nav__icon p {
+    font-size: 13px;
+  }
+  .request-btn {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+  .main-mobile__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .main-mobile__descr {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .appointment-btn {
+    padding: 9px 24px;
+    font-size: 18px;
+  }
+  .section-name {
+    font-size: 25px;
+    line-height: 29.3px;
+  }
+  .consultation__text {
+    font-size: 16px;
+    line-height: 18.75px;
+  }
+  .service__title {
+    font-size: 14px;
+  }
+  .service__title img {
+    height: 28px;
+  }
+  .service__descr {
+    font-size: 10px;
+    line-height: 11.72px;
+  }
+  .service {
+    padding: 14px 19px;
+    height: 183px;
+    width: 178px;
+    border-radius: 20px;
+  }
+  .articles-wrapper {
+    gap: 10px;
+  }
+  .services {
+    padding: 20px 0;
+  }
+  .consultation {
+    padding: 30px 0 40px;
+  }
+  .inner {
+    margin-top: 30px;
+  }
+  .numbers {
+    padding: 40px 0 30px;
+  }
+  .numbers__item {
+    padding: 20px;
+    width: 183px;
+    height: 230px;
+  }
+  .numbers__number {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 11px;
+  }
+  .upper-case {
+    font-size: 14px;
+    line-height: 16.41px;
+    margin-bottom: 29px;
+  }
+  .numbers__desc {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .video-gallery {
+    padding: 20px 0;
+  }
+  .section-description {
+    margin-bottom: 20px;
+  }
+  .doctors__slider-wrap {
+    min-width: 550px;
+  }
+  .doctors-swiper__slide {
+    max-width: 183px;
+  }
+  .doctors-swiper__slide img {
+    max-width: 183px;
+  }
+  .doctors__name {
+    display: block;
+  }
+  .request {
+    padding: 30px 20px;
+  }
+  .request__title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .request__descr {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .feedback {
+    padding: 30px 0;
+  }
+  .achievements {
+    padding: 20px 0;
+  }
+  .achievements-swiper__slide img {
+    height: 253px;
+  }
+  .achievements-swiper__wrapper {
+    max-width: 550px;
+  }
+  .mailing {
+    padding: 30px 20px;
+  }
+  .mailing__text {
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
+  .footer__contact {
+    padding: 20px 21px;
+  }
+  .footer__el {
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: none;
+  }
+  .footer__el_img svg {
+    height: 12px;
+  }
+  .footer__el_img path {
+    fill: #00A6FF;
+  }
+  .social-text {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    margin: 30px 0 11px;
+  }
+  .social-icons {
+    gap: 20px;
+  }
+  .social-icons img {
+    height: 45px;
+  }
+  .request-form input, .request-form select {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=media.css.map */
